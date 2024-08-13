@@ -88,8 +88,8 @@ terraform apply -var "tfc_organization=something" -var "region=aws_region"
 |region|\<the region which will be used on HCP and AWS\>|no|terraform|
 |stack_id|\<will be used to consistently name resources - 3-36 characters.  Can only contain letters, numbers and hyphens\>|no|terraform|
 |tfc_organization|\<your TFC account name\>|no|terraform|
-|HCP_CLIENT_ID|\<HCP Service Principal Client ID\>|no|env|
-|HCP_CLIENT_SECRET|\<HCP Service Principal Client Secret\>|yes|env|
+|HCP_CLIENT_ID|\<HCP Service Principal Client ID (under IAM -> keys)\>|no|env|
+|HCP_CLIENT_SECRET|\<HCP Service Principal Client Secret (under IAM -> keys)\>|yes|env|
 |HCP_PROJECT_ID|\<your HCP Project ID retrieved from HCP\>|no|env|
 |TFC_WORKLOAD_IDENTITY_AUDIENCE|\<can be literally anything\>|no|env|
 |TFE_TOKEN|\<TFC User token\>|yes|env|

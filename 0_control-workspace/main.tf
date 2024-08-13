@@ -29,8 +29,8 @@ resource "tfe_organization_run_task" "hcp_packer" {
 resource "tfe_workspace" "networking" {
   name          = "1_networking"
   organization  = var.tfc_organization
-  #project_id    = var.tfc_project_id
-  project_id = "ot-jVsy2n9LCaKWJWZn"
+  project_id    = var.tfc_project_id
+  #project_id = "ot-jVsy2n9LCaKWJWZn"
   vcs_repo {
     identifier = var.repo_identifier
     oauth_token_id = var.oauth_token_id
